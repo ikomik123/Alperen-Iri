@@ -1,0 +1,115 @@
+/*navigatiebar*/
+.unstyled-btn {
+      background-color: transparent;
+      font-size: 24px;
+       border: none;
+}
+
+#close-menu {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      cursor: pointer;
+      color: #f0f0f0;
+}
+
+#open-menu {
+     position: fixed;
+     top: 24px;
+     right: 24px;
+     color: #f0f0f0;
+     background-color: rgb(40, 39, 39);
+     border: none;
+     padding: 8px;
+     border-radius: 4px;
+     cursor: pointer;
+}
+
+#side-bar {
+     padding-top: 32px;
+     color: #f0f0f0;
+     background-color: rgb(40, 39, 39);
+     width: 300px;
+     height: 100vh;
+     position: fixed;
+     top: 0;
+     left: 0;
+     transform: translateX(-100%);
+     transition: transform 0.25s ease-out;
+}
+
+#side-bar li {
+     text-align: center;
+     padding: 50px 0;
+}
+
+#side-bar.side-bar--open {
+     transform: translateX(0);
+}
+
+.nav-link{
+  color:#f0f0f0;
+}
+
+.linkedin{
+  color: white;
+  width: 32px;
+  height: 32px;
+  filter: invert(100%) sepia(100%) saturate(0) hue-rotate(280deg) brightness(100%) contrast(100%);
+  padding: 0px 25px;
+  visibility: visible;
+}
+
+.instagram{
+  color: white;
+  width: 32px;
+  height: 32px;
+  filter: invert(100%) sepia(100%) saturate(0) hue-rotate(280deg) brightness(100%) contrast(100%);
+  padding: 100px 25px;
+  visibility: visible;
+}
+
+.github{
+  color: white;
+  width: 32px;
+  height: 32px;
+  filter: invert(100%) sepia(100%) saturate(0) hue-rotate(280deg) brightness(100%) contrast(100%);
+  padding: 50px 25px;
+  visibility: visible;
+}
+
+.ll{
+  visibility:hidden;
+}
+
+.lg{
+  visibility:hidden;
+}
+
+.lin{
+  visibility:hidden;
+}
+/*einde navigatiebar*/
+
+
+h2{
+    text-align: left;
+}
+
+body {
+   font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+    background-color: black;
+}
+
+H1{
+  color: white;
+  text-align: center;
+}
+
+h2{
+  color:white;
+  text-align:left;
+}
+p{
+    color: white;
+}
