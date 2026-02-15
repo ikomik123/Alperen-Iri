@@ -92,9 +92,7 @@
 /*einde navigatiebar*/
 
 
-h2{
-    text-align: left;
-}
+
 
 body {
    font-family: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
@@ -108,8 +106,28 @@ H1{
 
 h2{
   color:white;
-  text-align:left;
+  text-align:center;
 }
 p{
     color: white;
+    text-align: left;
+}
+
+table{
+  color:white;
+}
+
+.column {
+  float: left;
+  width: 40%;
+}
+
+.column {
+  flex: 40%;
+  text-align: center;
+}
+
+
+.row {
+  display: flex;
 }
