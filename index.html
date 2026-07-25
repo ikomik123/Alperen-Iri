@@ -1,42 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Welcome to my site</title>
-        <link rel="stylesheet" href="style.css">
-  </head>
- <body class="nigger">
-   <header class="header">
-<!--navigatiebar-->
-      <button id="open-menu">Menu</button>
-      <div id="side-bar">
-        <button id="close-menu" class="unstyled-btn">✖</button>
-        <li><a href="index.html" class="nav-link">home</a></li>
-        <li><a href="about.html" class="nav-link">programming languages</a></li>
-        <a href="https://www.linkedin.com/in/alperen-iri-6a7904355/" class="ll">
-          <img src="social.png" class="linkedin">
-        </a>
-        <a href="https://github.com/ikomik123" class="lg">
-          <img src="github.png" class="github">
-        </a>
-        <a href="https://www.instagram.com/alperen.turanci/" class="lin">
-          <img src="instagram.png" class="instagram">
-        </a>
-   </header>
-   <h1 id="niggerr">Alperen Iri</h1>
-   <h2>my coding experiences</h2>
-   <p>i started my coding journey when i was just 9 years old. i started with the basics: scratch jr. after i found that too easy, i switched to the regular scratch. at that time i was good at navigating the web and learned how scratch works through youtube. afterwards i tried learning how to hack, but at the time i was too young to learn something that advanced. after the age of 11, i went to highschool. my highschool, metis montessori lyceum, had special coding classes next to regular ones. it's name was coderclass. look in the menu for </p>
-   <p>i also made projects for the municipility of amsterdam and for waternet. i also was making games in unreal engine in my free time.</p>
-   <h2>my work experience</h2>
-   <p>i started my work journey at the age of 12. i started working as a teacher's assistant at coderminds. later on i became a teacher at the age of 15. coderminds is a company who teaches children coding. ages of children range fron 6-12 years old. when i was 13, i started my own freelancing job where i would plan people's vacations. it did not work out very well and thus needed to stop with it. i also started working in the school cantine when i was 12 and at age of 14 i started doing the administration. also at the age of 14 i found a job at the popular fast food chain HFC in the netherlands. i worked there for 2 months before i got asked to work in another restaurant as a waiter. i worked there 8 months before i resigned and continues working a singular job.</p>
-   <h2>more information</h2>
-   <p>i have done wingchun, a martial arts made during the japanese-chinese war made by ip-man, for over 3+ years in atilim. also next to that i have been doing escrima, a philipines sword fighting sport, for well over a year. i have helped with the school christmas party and made the posters and handled the music. now, i want to study law and become a lawyer. i know 3 languages fluently: dutch, english and turkish.</p>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alperen Iri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-  <script src="index.js"></script>
- </body>
+</head>
+<body>
+ 
+<div class="texture"></div>
+ 
+<!-- TOP BAR -->
+<div class="topbar">
+  <a href="#" class="brand">Alperen Iri<span>.</span></a>
+  <span class="tagline">Student at Metis Montessori</span>
+</div>
+ 
+<!-- GRADEBOOK NAV -->
+<div class="nav-scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<nav class="nav-tab">
+  <button class="tab-trigger" onclick="document.body.classList.add('nav-open')" aria-label="Open menu">
+    <div class="tab-mark"><svg viewBox="0 0 16 16"><path d="M2 8l4 4 8-8"/></svg></div>
+    <span class="stamp-text">Menu</span>
+  </button>
+  <div class="nav-panel">
+    <div class="nav-panel-header">
+      <span class="nav-panel-label">Roll Call</span>
+      <button class="nav-close" onclick="document.body.classList.remove('nav-open')" aria-label="Close menu">✕</button>
+    </div>
+    <ul class="roll-call">
+     <li><a href="index.html"><span class="num">01</span>Home<span class="check"><svg viewBox="0 0 16 16"><path d="M2 8l4 4 8-8"/></svg></span></a></li>
+      <li><a href="about.html"><span class="num">02</span>Teaching career<span class="check"><svg viewBox="0 0 16 16"><path d="M2 8l4 4 8-8"/></svg></span></a></li>
+      <li><a href="school.html" class="active"><span class="num">03</span>Education<span class="check"><svg viewBox="0 0 16 16"><path d="M2 8l4 4 8-8"/></svg></span></a></li>
+      <li><a href="contact.html" class="active"><span class="num">04</span>Contact<span class="check"><svg viewBox="0 0 16 16"><path d="M2 8l4 4 8-8"/></svg></span></a></li>
+    </ul>
+    <div class="nav-panel-footer">
+      Metis Montessori Lyceum<br>
+      Coding teacher and student<br>
+      Amsterdam
+    </div>
+  </div>
+</nav>
+ 
+<!-- MAIN LANDING -->
+<main>
+  <div class="landing">
+ 
+    <!-- PHOTO -->
+    <div class="portrait-wrap">
+      <div class="portrait-placeholder">
+        <svg viewBox="0 0 100 100" fill="none">
+          <circle cx="50" cy="38" r="16" stroke="#C9A14A" stroke-width="1.4" opacity="0.7"/>
+          <path d="M20 88c0-16 13-27 30-27s30 11 30 27" stroke="#C9A14A" stroke-width="1.4" opacity="0.7"/>
+        </svg>
+      </div>
+      <div class="portrait-monogram">M.E.</div>
+      <div class="tick tl"></div>
+      <div class="tick tr"></div>
+      <div class="tick bl"></div>
+      <div class="tick br"></div>
+      <div class="portrait-frame"></div>
+      <div class="wipe"></div>
+    </div>
+ 
+    <!-- TEXT -->
+    <div class="landing-text">
+      <span class="eyebrow"></span>
+      <h1>Alperen<br>Iri</h1>
+      <div class="role-line">Teacher · Student · Coderminds · Metis Montessory Lyceum</div>
+      <p class="intro">Student at a prestigious school Metis Montessori Lyceum, taking advanced coding classes while working at coderminds as a coding teacher.</p>
+      <div class="landing-actions">
+        <a href="about.html" class="btn-primary">Learn more →</a>
+        <a href="about.html#contact" class="btn-ghost">Get in touch</a>
+      </div>
+    </div>
+ 
+  </div>
+</main>
+ 
+<div class="scroll-cue">
+  <span>Explore</span>
+  <span class="line"></span>
+</div>
+ 
+</body>
 </html>
- </body>
-
-</html>
-

@@ -1,19 +1,31 @@
+document.addEventListener('DOMContentLoaded', () => {
+  
+  // Selecteer de elementen
+  const body = document.body;
+  const tabTrigger = document.querySelector('.tab-trigger');
+  const navScrim = document.querySelector('.nav-scrim');
+  const navClose = document.querySelector('.nav-close');
+  const navLinks = document.querySelectorAll('.roll-call a');
 
-const openMenuButton = document.getElementById('open-menu');
-const closeMenuButton = document.getElementById('close-menu');
-const sideBar = document.getElementById('side-bar');
-const OPEN_SIDE_BAR_CLASS = 'side-bar--open';
-
-// We controleren of de knop bestaat voordat we een actie koppelen.
-if (openMenuButton && sideBar) {
-    openMenuButton.addEventListener("click", () => {
-        sideBar.classList.add(OPEN_SIDE_BAR_CLASS);
+  // Functie om menu te openen
+  if (tabTrigger) {
+    tabTrigger.addEventListener('click', () => {
+      body.classList.add('nav-open');
     });
-}
+  }
 
-// We controleren of de sluitknop bestaat.
-if (closeMenuButton && sideBar) {
-    closeMenuButton.addEventListener("click", () => {
-        sideBar.classList.remove(OPEN_SIDE_BAR_CLASS);
-    });
-}
+  // Functie om menu te sluiten
+  const closeMenu = () => {
+    body.classList.remove('nav-open');
+  };
+
+  // Koppel sluit-functie aan de achtergrond en de sluitknop
+  if (navScrim) navScrim.addEventListener('click', closeMenu);
+  if (navClose) navClose.addEventListener('click', closeMenu);
+
+  // Zorg dat het menu sluit als je op een link klikt
+  navLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+});

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alperen Iri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="school.css">
+</head>
+<body>
+ 
+<div class="texture"></div>
+ 
+<!-- TOP BAR -->
+<div class="topbar">
+  <a href="index.html" class="brand">Alperen Iri<span>.</span></a>
+</div>
+ 
+<!-- GRADEBOOK NAV -->
+<div class="nav-scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<nav class="nav-tab">
+  <button class="tab-trigger" onclick="document.body.classList.add('nav-open')" aria-label="Open menu">
+    <div class="tab-mark"><svg viewBox="0 0 16 16"><path d="M2 8l4 4 8-8"/></svg></div>
+    <span class="stamp-text">Menu</span>
+  </button>
+  <div class="nav-panel">
+    <div class="nav-panel-header">
+      <span class="nav-panel-label">Roll Call</span>
+      <button class="nav-close" onclick="document.body.classList.remove('nav-open')" aria-label="Close menu">✕</button>
+    </div>
+    <ul class="roll-call">
+     <li><a href="index.html"><span class="num">01</span>Home<span class="check"><svg viewBox="0 0 16 16"><path d="M2 8l4 4 8-8"/></svg></span></a></li>
+      <li><a href="about.html"><span class="num">02</span>Teaching career<span class="check"><svg viewBox="0 0 16 16"><path d="M2 8l4 4 8-8"/></svg></span></a></li>
+      <li><a href="school.html" class="active"><span class="num">03</span>Education<span class="check"><svg viewBox="0 0 16 16"><path d="M2 8l4 4 8-8"/></svg></span></a></li>
+      <li><a href="contact.html" class="active"><span class="num">04</span>Contact<span class="check"><svg viewBox="0 0 16 16"><path d="M2 8l4 4 8-8"/></svg></span></a></li>
+    </ul>
+    <div class="nav-panel-footer">
+      Metis Montessori Lyceum<br>
+      Coding teacher and student<br>
+      Amsterdam
+  </div>
+</nav>
+ 
+<main>
+ 
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="page-hero-stamp">Personnel Record</span>
+      <h1>My <em>education.</em></h1>
+      <p>I passed through elementary school easily, getting HAVO (Senior general secondary education) on both 7th grade and 8th before Kiemm montessori requested requested i study at their school, which i refused to go to Metis Montessori Lyceum and now doing my last year.</p>
+    </div>
+  </section>
+ 
+  <!-- SUMMARY STRIP -->
+  <section class="summary-strip">
+    <div class="container">
+      <div class="summary-grid">
+        <div class="summary-cell">
+          <div class="num">12</div>
+          <div class="cap">Years in school</div>
+        </div>
+        <div class="summary-cell">
+          <div class="num">HAVO</div>
+          <div class="cap">School advice</div>
+        </div>
+        <div class="summary-cell">
+          <div class="num">100%</div>
+          <div class="cap">grade pass rate</div>
+        </div>
+        <div class="summary-cell">
+          <div class="num">30+</div>
+          <div class="cap">Flawless presentations</div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- CAREER TIMELINE -->
+  <section class="career-sec">
+    <div class="container">
+      <div class="section-head">
+        <span class="label">Record</span>
+        <h2>Grades</h2>
+      </div>
+ 
+      <div class="transcript">
+ 
+        <div class="t-entry">
+          <div class="yr">2022<span class="to">—</span>2023</div>
+          <div class="body">
+            <h4>1st grade HAVO</h4>
+            <div class="org">Metis Montessori Lyceum</div>
+          </div>
+          <div class="tag-col">
+            <span class="tag">passed</span>
+          </div>
+        </div>
+ 
+        <div class="t-entry">
+          <div class="yr">2023<span class="to">—</span>2024</div>
+          <div class="body">
+            <h4>2nd grade Havo</h4>
+            <div class="org">Metis Montessori Lyceum</div>
+          </div>
+          <div class="tag-col">
+            <span class="tag">Passed</span>
+          </div>
+        </div>
+ 
+        <div class="t-entry">
+          <div class="yr">2024<span class="to">—</span>2025</div>
+          <div class="body">
+            <h4>3rd grade Havo</h4>
+            <div class="org">Metis Montessori Lyceum</div>
+          </div>
+          <div class="tag-col">
+            <span class="tag">Passed</span>
+          </div>
+        </div>
+ 
+         <div class="t-entry">
+          <div class="yr">2025<span class="to">—</span>2026</div>
+          <div class="body">
+            <h4>4th grade Havo</h4>
+            <div class="org">Metis Montessori Lyceum</div>
+          </div>
+          <div class="tag-col">
+            <span class="tag">Passed</span>
+          </div>
+        </div>
+ 
+        <div class="t-entry">
+          <div class="yr">2026<span class="to">—</span>2027</div>
+          <div class="body">
+            <h4>5th grade Havo</h4>
+            <div class="org">Metis Montessori Lyceum</div>
+          </div>
+          <div class="tag-col">
+            <span class="tag gold">ongoing</span>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <!-- CREDENTIALS -->
+  <section class="credentials">
+    <div class="container">
+      <div class="section-head">
+        <span class="label">Filed</span>
+        <h2>Certifications</h2>
+      </div>
+      <div class="cred-list">
+        <div class="cred-item">
+          <div>
+            <div class="name">CPR diploma</div>
+            <div class="meta">Issued 2025 · Expired 2026</div>
+          </div>
+          <span class="yr-badge">Expired</span>
+        </div>
+        <div class="cred-item">
+          <div>
+            <div class="name">Coding basics</div>
+            <div class="meta">Coderminds</div>
+          </div>
+          <span class="yr-badge">2021</span>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+</main>
+ 
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="label">Get in Touch</div>
+    <h2>Want to know more about my <em>work in the classroom?</em></h2>
+    <a href="mailto:AlperenIri@proton.me" class="contact-email">AlperenIri@proton.me →</a>
+  </div>
+  <footer>
+    <span>© 2026 Alperen Iri</span>
+    <span>Metis Montessori Lyceum</span>
+  </footer>
+</section>
+ 
+</body>
+</html>

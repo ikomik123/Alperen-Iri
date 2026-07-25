@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alperen Iri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="contact.css">
+</head>
+<body>
+ 
+<div class="texture"></div>
+ 
+<!-- TOP BAR -->
+<div class="topbar">
+  <a href="index.html" class="brand">Alperen Iri<span>.</span></a>
+</div>
+ 
+<!-- GRADEBOOK NAV -->
+<div class="nav-scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<nav class="nav-tab">
+  <button class="tab-trigger" onclick="document.body.classList.add('nav-open')" aria-label="Open menu">
+    <div class="tab-mark"><svg viewBox="0 0 16 16"><path d="M2 8l4 4 8-8"/></svg></div>
+    <span class="stamp-text">Menu</span>
+  </button>
+  <div class="nav-panel">
+    <div class="nav-panel-header">
+      <span class="nav-panel-label">Roll Call</span>
+      <button class="nav-close" onclick="document.body.classList.remove('nav-open')" aria-label="Close menu">✕</button>
+    </div>
+    <ul class="roll-call">
+     <li><a href="index.html"><span class="num">01</span>Home<span class="check"><svg viewBox="0 0 16 16"><path d="M2 8l4 4 8-8"/></svg></span></a></li>
+      <li><a href="about.html"><span class="num">02</span>Teaching career<span class="check"><svg viewBox="0 0 16 16"><path d="M2 8l4 4 8-8"/></svg></span></a></li>
+      <li><a href="school.html" class="active"><span class="num">03</span>Education<span class="check"><svg viewBox="0 0 16 16"><path d="M2 8l4 4 8-8"/></svg></span></a></li>
+      <li><a href="contact.html" class="active"><span class="num">04</span>Contact<span class="check"><svg viewBox="0 0 16 16"><path d="M2 8l4 4 8-8"/></svg></span></a></li>
+    </ul>
+    <div class="nav-panel-footer">
+      Metis Montessori Lyceum<br>
+      Coding teacher and student<br>
+      Amsterdam4
+    </div>
+  </div>
+</nav>
+ 
+<main>
+ 
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="page-hero-stamp">mail me</span>
+      <h1>Get in <em>touch.</em></h1>
+    </div>
+  </section>
+ 
+  <!-- MAIN CONTACT -->
+  <section class="contact-main">
+    <div class="container">
+      <div class="contact-grid">
+ 
+        <!-- INFO CARD -->
+        <div class="info-card">
+          <div class="card-title">Contact Details</div>
+
+          <div class="info-row">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z" stroke-linejoin="round"/><path d="M4 6l8 7 8-7" stroke-linejoin="round"/></svg></div>
+            <div>
+              <div class="label">Email</div>
+              <div class="value"><a href="mailto:m.ellison@lincolnhs.edu">AlperenIri@proton.me</a></div>
+              <div class="sub">Main way of reaching out to me.</div>
+            </div>
+          </div>
+
+
+          <div class="info-row">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-7.5 8-13a8 8 0 1 0-16 0c0 5.5 8 13 8 13z" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+            <div>
+              <div class="label">Location</div>
+              <div class="value">Stichting Samen tussen Amstel en IJ voor Openbaar Primair Onderwijs</div>
+              <div class="sub">Right to the entrance next to the computer room.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card hours-table">
+          <div class="card-title">Office Hours</div>
+          <div class="hours-row"><span class="day">Monday</span><span class="time closed">15:00-18:00</span></div>
+          <div class="hours-row"><span class="day">Tuesday</span><span class="time">Not available</span></div>
+          <div class="hours-row"><span class="day">Wednesday</span><span class="time closed">Not available</span></div>
+          <div class="hours-row"><span class="day">Thursday</span><span class="time">Not available</span></div>
+          <div class="hours-row"><span class="day">Friday</span><span class="time closed">Not available</span></div>
+
+          <div class="stamp-note">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            I am only at location when it is outside vacation days.
+          </div>
+        </div>
+        <!-- FORM -->
+<!--       <form class="note-form" id="contactForm">
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+            </div>
+            <div class="field">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+            </div>
+          </div>
+ 
+          <div class="field">
+            <label for="role">I am a...</label>
+            <select id="role" name="role">
+              <option>Current Student</option>
+              <option>Parent / Guardian</option>
+              <option>Colleague</option>
+              <option>Other</option>
+            </select>
+          </div>
+ 
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Question about Thursday's homework" required>
+          </div>
+ 
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your note here..." required></textarea>
+          </div>
+ 
+          <div class="submit-row">
+            <button type="submit" class="btn-primary">Send note →</button>
+            <span class="privacy-note">Sent directly to my school email. I won't share your info.</span>
+          </div>
+ 
+          <div class="form-status" id="formStatus">
+            <svg viewBox="0 0 16 16"><path d="M2 8l4 4 8-8"/></svg>
+            <span>Noted — thank you. I'll reply within 1–2 school days.</span>
+          </div>
+        </form>
+ --> 
+      </div>
+    </div>
+  </section>
+  </section>
+ 
+</main>
+ 
+<footer class="site-footer">
+  <span>© 2026 Alperen Iri</span>
+  <span>Coderminds</span>
+</footer>
+ 
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    document.getElementById('formStatus').classList.add('show');
+    this.reset();
+  });
+</script>
+ 
+</body>
+</html>
