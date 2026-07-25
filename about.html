@@ -1,43 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Welcome to my site</title>
-        <link rel="stylesheet" href="about.css">
-  </head>
-  <body>
-    <header class="header">
-<!--navigatiebar-->
-      <button id="open-menu">Menu</button>
-      <div id="side-bar">
-        <button id="close-menu" class="unstyled-btn">✖</button>
-        <li><a href="index.html" class="nav-link">home</a></li>
-        <li><a href="about.html" class="nav-link">about me</a></li>
-        <a href="https://www.linkedin.com/in/alperen-iri-6a7904355/" class="ll">
-          <img src="social.png" class="linkedin">
-        </a>
-        <a href="https://github.com/Alperen8Iri" class="lg">
-          <img src="github.png" class="github">
-        </a>
-        <a href="https://www.instagram.com/alperen.turanci/" class="lin">
-          <img src="instagram.png" class="instagram">
-        </a>
-   </header>
-   <h1>my programming experiences</h1>
-    <div>
-    <div style="background-color:#250031a3;">
-   <h2>languages i know and how long i know them</h2>
-      <p><b>Html</b> = 6+ years, did it since i was 9</p>
-      <p><b>Css</b> = 6+ years, did it since i was 9 but started to learn it seriously when i was 12</p>
-      <p><b>Python</b> = 4+ years, started python since i was 11</p>
-      <p><b>Linux</b> = 3+ years, i learned the console on linux and used kali linux for some time</p>
-      <p><b>unreal engine 4</b> = 1 year, i used it and learned the ultimate basics</p>
-      <p><b>unreal engine </b> = 2+ years, after using unreal engine 4 and getting a better laptop, i moved on to unreal engine 5</p>
-      <p><b>robotics</b> = 3+ years, i learned programming robots and even took part in FLL. Because the lack of teammates and communications, we didn't get far</p>
-      <p><b>microbit</b> = 5+ years, i lend the microbit of my brother and figured stuff out myself. i later got propper education</p>
-      <p><b>arduino</b> = 1+ years, i newly learned how to work with an arduino</p>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alperen Iri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="about.css">
+<script src="index.js" defer></script>
+</head>
+<body>
+
+<div class="texture"></div>
+
+<div class="topbar">
+  <a href="#top" class="brand">Alperen Iri<span>.</span></a>
+</div>
+
+<div class="nav-scrim"></div>
+<nav class="nav-tab">
+  <button class="tab-trigger" aria-label="Open menu">
+    <div class="tab-mark"><svg viewBox="0 0 16 16"><path d="M2 8l4 4 8-8"/></svg></div>
+    <span class="stamp-text">More</span>
+  </button>
+  <div class="nav-panel">
+    <div class="nav-panel-header">
+      <span class="nav-panel-label">Roll Call</span>
+      <button class="nav-close" aria-label="Close menu">✕</button>
     </div>
-   <script src="index.js"></script>
-  </body>
+    <ul class="roll-call">
+     <li><a href="index.html"><span class="num">01</span>Home<span class="check"><svg viewBox="0 0 16 16"><path d="M2 8l4 4 8-8"/></svg></span></a></li>
+      <li><a href="about.html"><span class="num">02</span>Teaching career<span class="check"><svg viewBox="0 0 16 16"><path d="M2 8l4 4 8-8"/></svg></span></a></li>
+      <li><a href="school.html" class="active"><span class="num">03</span>Education<span class="check"><svg viewBox="0 0 16 16"><path d="M2 8l4 4 8-8"/></svg></span></a></li>
+      <li><a href="contact.html" class="active"><span class="num">04</span>Contact<span class="check"><svg viewBox="0 0 16 16"><path d="M2 8l4 4 8-8"/></svg></span></a></li>
+    </ul>
+    <div class="nav-panel-footer">
+      Metis Montessori Lyceum<br>
+      Coding teacher and student<br>
+      Amsterdam
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <section class="hero" id="top">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-margin"><span class="since">Teaching since 2022</span></div>
+        <div>
+          <span class="hero-stamp">Faculty member · Coderminds</span>
+          <h1>Alperen<br>Iri<br><em>teaches coding.</em></h1>
+          <p class="hero-sub">working for 4 years as a faculty member, helping children survive and find a job easier in the near future.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary">Get in touch →</a>
+            <a href="#about" class="btn-ghost">Read my approach</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-head">
+        <span class="label">02</span>
+        <h2>About</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I teach children the way that would have worked for me when I was their age: using visual examples and staying energetic. Back when I began working as a teacher's assistant in elementary school, I had a teacher who constantly forced her opinions onto everything. In later years, I encountered teachers who were only interested in their paycheck rather than teaching, which made the classes incredibly boring.</p>
+          <p>Because of this, there is no room for my personal opinion during my classes; instead, I teach everything using physical or visual examples. This ranges from showing an actual computer part to using a picture or video. I also make an effort to connect with my students by getting to know them before or after class, or by playing games with them.</p>
+        </div>
+        <div class="roster">
+          <div class="roster-title">At a Glance</div>
+          <div class="roster-row"><span class="k">Years teaching</span><span class="v">4</span></div>
+          <div class="roster-row"><span class="k">Current company</span><span class="v">Coderminds</span></div>
+          <div class="roster-row"><span class="k">Age</span><span class="v">6-14</span></div>
+          <div class="roster-row"><span class="k">Coding education</span><span class="v">Coderclass</span></div>
+          <div class="roster-row"><span class="k">Best in</span><span class="v">Game development &amp; Scratch</span></div>
+          <div class="roster-row"><span class="k">Active in</span><span class="v">Amsterdam-East</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="subjects" id="subjects">
+    <div class="container">
+      <div class="section-head">
+        <span class="label">03</span>
+        <h2>What I Teach</h2>
+      </div>
+      <div class="subject-cards">
+        <div class="subject-card">
+          <div class="period">Age 6-8</div>
+          <h3>Scratch junior</h3>
+          <p>Because the children around this time don't know reading, i give them scratch junior and give them little challenges.</p>
+        </div>
+        <div class="subject-card">
+          <div class="period">8-10</div>
+          <h3>scratch</h3>
+          <p>Around this age they know how to read, so they can go a level higher. I give them printed challenges</p>
+        </div>
+        <div class="subject-card">
+          <div class="period">10+</div>
+          <h3>Game Development</h3>
+          <p>If they mastered scratch, we put them on basic game development through kodu game labs.</p>
+        </div>
+        <div class="subject-card">
+          <div class="period">Gifted children</div>
+          <h3>Faster paced</h3>
+          <p>Gifted children learn faster, thus we give them still the same stuff but harder objectives.</p>
+        </div>
+        <div class="subject-card">
+          <div class="period">Summer</div>
+          <h3>Summercamps</h3>
+          <p>I teach in summercamps in everything we have to offer.</p>
+        </div>
+        <div class="subject-card">
+          <div class="period">Intermediate Kids</div>
+          <h3>Start to the basics</h3>
+          <p>Children who are intermediate or came by a lot to our company we make them do Lua, Python and Unity. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="timeline-sec" id="journey">
+    <div class="container">
+      <div class="section-head">
+        <span class="label">04</span>
+        <h2>My journey</h2>
+      </div>
+      <div class="timeline">
+        <div class="t-row">
+          <div class="yr">2022</div>
+          <div>
+            <h4>First time helping</h4>
+            <p>Started helping a teacher at Coderminds for the first time. It was my first summer camp.</p>
+          </div>
+        </div>
+        <div class="t-row">
+          <div class="yr">2023</div>
+          <div>
+            <h4>Coderclass</h4>
+            <p>Next to working in the summers as an assistant, i went to high school and started coderclass, learning coding on a more advanced grade.</p>
+          </div>
+        </div>
+        <div class="t-row">
+          <div class="yr">2026</div>
+          <div>
+            <h4>promotion to teacher</h4>
+            <p>just before the summer of 2026 i officially got promoted to teacher and for the first time stood independantly in the class.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="label">05 · Get in Touch</div>
+    <h2>Questions for me?</h2>
+    <a href="mailto:AlperenIri@proton.me" class="contact-email">AlperenIri@proton.me →</a>
+  </div>
+  <footer>
+    <span>© 2026 Alperen Iri</span>
+    <span>Coderminds</span>
+  </footer>
+</section>
+
+</body>
 </html>
