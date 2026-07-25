@@ -1,4 +1,4 @@
- :root{
+:root{
     --paper:#F7F5F0;
     --paper-deep:#EFEBE2;
     --ink:#1C2B33;
@@ -231,21 +231,18 @@
   }
  
   /* placeholder portrait */
-  .portrait-placeholder{
-    position:absolute; inset:0;
-    background:
-      linear-gradient(160deg, #2A3D46 0%, #1C2B33 55%, #16232A 100%);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    opacity:0;
-    animation:portraitFade 1s ease 0.9s forwards;
-  }
+.portrait-placeholder{
+  position:absolute;
+  inset:0;
+}
  
-  .portrait-placeholder svg{
-    width:46%;
-    opacity:0.9;
-  }
+.portrait-placeholder img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center top;
+  display:block;
+}
  
   .portrait-monogram{
     position:absolute;
